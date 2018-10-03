@@ -1,0 +1,31 @@
+{
+  "name": "cucumber-protractor",
+  "version": "0.0.1",
+  "description": "Cucumber + Protractor",
+  "repository": "github:eugenZab/test2",
+  "scripts": {
+    "npm-install": "npm install",
+    "npm-update": "npm update",
+    "webdriver-manager-update": "webdriver-manager update",
+    "webdriver-manager-start": "webdriver-manager start",
+    "webdriver-manager-clean": "webdriver-manager clean",
+    "start-local-test": "protractor protractor.config.js",
+    "start-grid-test": "protractor protractor.config.grid.js",
+    "start-flake-test": "node ./flake ./protractor.config.js",
+    "start-grid-flake-test": "node ./flake ./protractor.config.grid.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chromedriver": "^2.42.0",
+    "cucumber": "^5.0.1",
+    "multiple-cucumber-html-reporter": "^1.11.2",
+    "protractor": "^5.4.1",
+    "protractor-cucumber": "^0.1.8",
+    "protractor-cucumber-framework": "^6.1.1",
+    "protractor-flake": "^3.3.0"
+  },
+  "dependencies": {
+    "features": "^0.1.0"
+  }
+}

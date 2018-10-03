@@ -1,0 +1,7 @@
+bbhub_autotests:
+  script: 
+  - node ./flake ./protractor.config.js
+  after_script: 
+  - cp -R /home/gitlab-runner/builds/46a6e734/0/bb-dev/BBHub-E2E-Automation/reportFinal /var/log/night-run/bbhub
+
+
