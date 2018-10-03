@@ -7,7 +7,7 @@ When(/^I should be able to open google page$/, async function () {
     return page.openPage("http://www.google.com");
 });
 
-Then(/^Page title should equal to: "([^"]*)"$/, async function (arg1) {
+Then(/^Page title should equal to: "([^"]*)"$/, async function (title) {
     let result = await page.getTitle();
-    return expect(result).to.be.equal(arg1);
+    return expect(result).to.be.equal(title);
 });
